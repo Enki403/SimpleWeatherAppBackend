@@ -1,0 +1,1 @@
+Deployed on https://simpleweatherappbackend.onrender.com/api/weather/
