@@ -44,16 +44,11 @@ const getWeatherByCityName = async(expressRequest, expressResponse = expressResp
         };
 
         const keyWeatherInformation = {
-            timestamp: data.dt,
-            timezone: data.timezone,
-            location,
             weather_main: data.weather[0].main,
             weather_description: data.weather[0].description,
             weather_icon: data.weather[0].icon,
             temperature: data.main.temp,
             feels_like:  data.main.feels_like,
-            temp_min: data.main.temp_min,
-            temp_max: data.main.temp_max,
             humidity: data.main.humidity,
         };
         
