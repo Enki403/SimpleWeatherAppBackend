@@ -53,8 +53,7 @@ const getWeatherByCityName = async(expressRequest, expressResponse = expressResp
         };
         
         return expressResponse.status(status).json({
-            statusText,
-            data: keyWeatherInformation
+            keyWeatherInformation
         });
 
     }catch( error ){
